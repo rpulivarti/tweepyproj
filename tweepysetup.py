@@ -14,6 +14,8 @@ try:
 except tweepy.TweepError:
     print('Error! Failed to get request token.')
 
+# Example using callback (web app)
+verifier = request.GET.get('oauth_verifier')
 
 # Example w/o callback (desktop)
 verifier = input('Verifier:')
